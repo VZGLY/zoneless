@@ -1,0 +1,12 @@
+@if (_poke()) 
+{
+    <div>
+        <p>{{_poke()?.name}}</p>
+        <p>{{_poke()?.id}}</p>
+        <p>{{_poke()?.height}}</p>
+        <p>{{_poke()?.weight}}</p>
+        <img src="{{_poke()?.sprites?.front_default}}" alt="">
+    </div>
+}
+
+

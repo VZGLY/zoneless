@@ -1,0 +1,15 @@
+@if(pokemonListResult())
+{
+  @for (item of pokemonListResult()?.results; track $index) 
+  {
+    <div>
+      <p>
+        {{item.name}} <a [routerLink]="'/detail/' + item.id">Detail</a>
+      </p>
+    </div>
+    
+  }
+}
+@else {
+  <p>Pas de data</p>
+}
